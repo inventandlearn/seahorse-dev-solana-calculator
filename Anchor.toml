@@ -1,0 +1,15 @@
+[features]
+seeds = true
+skip-lint = false
+[programs.localnet]
+calculator = "DdMkrf3qEZxymph9RSnXuZ4iHQJV6MJG9JiLr9vCA4fL"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+wallet = "/home/invent2learn/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
